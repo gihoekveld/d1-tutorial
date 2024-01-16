@@ -1,6 +1,6 @@
 name = "d1-tutorial"
 main = "src/index.ts"
-compatibility_date = "2023-12-18"
+compatibility_date = "2024-01-16"
 
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.
@@ -49,3 +49,8 @@ compatibility_date = "2023-12-18"
 # [[migrations]]
 # tag = "v1"
 # new_classes = ["MyDurableObject"]
+
+[[d1_databases]]
+binding = "DB"                                       # available in your Worker on env.DB
+database_name = "prod-d1-tutorial"
+database_id = "1203198a-d645-4f21-8054-e9a5bea45ac7"
